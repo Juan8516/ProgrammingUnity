@@ -7,7 +7,7 @@ namespace ProVideoGames.FunfamentosProgramacion
 {
     public class Variables : MonoBehaviour
     {
-        s/*Partes de una variable*/
+        /*Partes de una variable*/
 
         // - Modificador de acceso
         // Public 
