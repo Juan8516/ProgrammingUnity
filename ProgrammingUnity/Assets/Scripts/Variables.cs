@@ -28,7 +28,7 @@ namespace ProVideoGames.FunfamentosProgramacion
         // - Ejemplos
         // Variables
         public string playerName = "Juan";
-        private int age = 27;
+        private readonly int age = 27;
 
         // Tipos de datos (valor)
         public int myInt;
