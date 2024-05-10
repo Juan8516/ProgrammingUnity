@@ -234,7 +234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1308344576}
-  - component: {fileID: 1308344575}
+  - component: {fileID: 1308344577}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -242,23 +242,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1308344575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308344574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a614b0a5e6150c040ad8cba734ac26d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  displyName: Juan Manuel
-  health: 100
-  mana: 50
-  isAlive: 0
-  capsuleCollider: {fileID: 0}
 --- !u!4 &1308344576
 Transform:
   m_ObjectHideFlags: 0
@@ -274,6 +257,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1308344577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308344574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f2477686c4e54043ba382fca026c569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1552887141
 GameObject:
   m_ObjectHideFlags: 0
