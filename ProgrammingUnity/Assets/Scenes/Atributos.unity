@@ -266,9 +266,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308344574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f2477686c4e54043ba382fca026c569, type: 3}
+  m_Script: {fileID: 11500000, guid: 9870f0d067ffd884abf49b527522e982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShooterSpeed: 1
+  Rate: 1
+  BulletSpeed: 2.5
+  BulletPerShoot: 1
 --- !u!1 &1552887141
 GameObject:
   m_ObjectHideFlags: 0
