@@ -266,11 +266,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308344574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5c23f51548b07142ba833d8fc2433ed, type: 3}
+  m_Script: {fileID: 11500000, guid: a38dd195f00b0a84188914b6eb86ebdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Description: ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
-  Note: gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
 --- !u!1 &1552887141
 GameObject:
   m_ObjectHideFlags: 0
