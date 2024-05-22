@@ -14,8 +14,8 @@ namespace ProVideoGames.FundamentosProgramacion
 
         private void Start()
         {
-            int myId = enemyIds[3]; // 900
-            myId = enemyIds[0]; //100
+            int myId = enemyIds[3]; //900
+                myId = enemyIds[0]; //100
         }
     }
 }

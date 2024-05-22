@@ -40,7 +40,5 @@ namespace ProVideoGames.FundamentosProgramacion
         {
             return 10;
         }
-
-
     }
 }
