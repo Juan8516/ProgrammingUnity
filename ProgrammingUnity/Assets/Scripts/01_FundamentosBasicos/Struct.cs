@@ -35,7 +35,6 @@ namespace ProVideoGames.FundamentosProgramacion
             playerData.name = "Juan Manuel Salazar";
             playerData.health = 600;
             playerIsDead = false;
-
         }
 
     }
