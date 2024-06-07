@@ -9,6 +9,8 @@ namespace ProVideoGames.POO
         public int health;
         public float speed;
         public bool isLive;
+        public string title;
+        public int demage;
         public enum EnemyAttack
         {
             None = 0,
@@ -17,23 +19,32 @@ namespace ProVideoGames.POO
             Sword = 3,
         }
 
-        public EnemyAttack enemyAttack;
-
-        public void AttackOne()
+        public enum EnemyDefense
         {
-            switch (enemyAttack = 0)
-            {
-                case EnemyAttack.None:
-                    break;
-                case EnemyAttack.Punch:
-                    break;
-                case EnemyAttack.Energy:
-                    break;
-                case EnemyAttack.Sword:
-                    break;
-                default:
-                    break;
-            }
+            None = 0,
+            DefenseMagican = 1,
+            DefenseShield = 2,
+            DefenseCap = 3,
+        }
+
+        public EnemyAttack enemyAttack;
+        public EnemyDefense defense;
+
+        private void Start()
+        {
+            Attack();
+            Defense();
+        }
+
+        public virtual void Attack()
+        {
+            Debug.Log($"Enemy: '{title}' Attack. Demage: '{demage}'");
+            Debug.Log(enemyAttack = EnemyAttack.Energy);
+        }
+
+        private void Defense()
+        {
+            Debug.Log(defense = EnemyDefense.DefenseShield);
         }
     }
 }

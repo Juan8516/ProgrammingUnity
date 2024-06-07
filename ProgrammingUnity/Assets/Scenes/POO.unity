@@ -346,10 +346,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3814a83ed4155e541b28247b02445e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  speed: 0
-  isLive: 0
+  health: 500
+  speed: 80
+  isLive: 1
+  title: Velocista
+  demage: 30
   enemyAttack: 0
+  defense: 0
 --- !u!4 &1462412702
 Transform:
   m_ObjectHideFlags: 0
@@ -585,7 +588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2105838204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,10 +601,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119bfa78507edf246b5b7ef19fbb35c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  speed: 0
-  isLive: 0
-  enemyAttack: 0
+  health: 100
+  speed: 20
+  isLive: 1
+  title: Magican
+  demage: 15
+  enemyAttack: 2
+  defense: 0
 --- !u!4 &2105838205
 Transform:
   m_ObjectHideFlags: 0

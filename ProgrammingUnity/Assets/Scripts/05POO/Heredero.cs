@@ -6,9 +6,13 @@ namespace ProVideoGames.POO
 {
     public class Heredero : Herencias
     {
-        private void Update()
+        private void Start()
         {
-            AttackOne();
+            health = 999;
+
+            base.Attack();
+
+            Debug.Log($"Ataque '{enemyAttack = EnemyAttack.Punch}' Demage: '{demage}'");
         }
     }
 }
