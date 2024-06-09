@@ -6,11 +6,13 @@ namespace ProVideoGames.POO
 {
     public class Herencias : MonoBehaviour
     {
-        public int health;
+        [Header("Enemy")]
+
+        public string title;
+        [SerializeField] protected int health;
+        [SerializeField] protected int demage;
         public float speed;
         public bool isLive;
-        public string title;
-        public int demage;
         public enum EnemyAttack
         {
             None = 0,
