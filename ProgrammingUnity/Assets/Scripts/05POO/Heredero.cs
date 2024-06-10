@@ -14,5 +14,10 @@ namespace ProVideoGames.POO
 
             Debug.Log($"Ataque '{enemyAttack = EnemyAttack.Punch}' Demage: '{demage}'");
         }
+
+        public override void Defense()
+        {
+            Debug.Log($"Enemy '{_title}' Defense: '{health}'");
+        }
     }
 }

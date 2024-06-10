@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace ProVideoGames.POO
 {
-    public class Herencias : MonoBehaviour
+    public abstract class Herencias : MonoBehaviour
     {
         [Header("Enemy")]
 
-        public string title;
+        [SerializeField] protected string _title;
         [SerializeField] protected int health;
         [SerializeField] protected int demage;
         public float speed;
@@ -32,6 +32,19 @@ namespace ProVideoGames.POO
         public EnemyAttack enemyAttack;
         public EnemyDefense defense;
 
+        public string Title 
+        {
+            get 
+            { 
+                return _title; 
+            } 
+            
+            set 
+            {
+                _title = value; 
+            } 
+        }
+
         private void Start()
         {
             Attack();
@@ -40,13 +53,10 @@ namespace ProVideoGames.POO
 
         public virtual void Attack()
         {
-            Debug.Log($"Enemy: '{title}' Attack. Demage: '{demage}'");
+            Debug.Log($"Enemy: '{_title}' Attack. Demage: '{demage}'");
             Debug.Log(enemyAttack = EnemyAttack.Energy);
         }
 
-        private void Defense()
-        {
-            Debug.Log(defense = EnemyDefense.DefenseShield);
-        }
+        public abstract void Defense();
     }
 }
