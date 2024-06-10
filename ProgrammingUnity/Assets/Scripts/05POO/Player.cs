@@ -10,7 +10,7 @@ namespace ProVideoGames.POO
 
         private void Start()
         {
-            float templeHealth = enemy.demage;
+            string templeHealth = enemy.Title;
         }
 
     }
