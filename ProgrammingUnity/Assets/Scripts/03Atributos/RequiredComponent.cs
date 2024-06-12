@@ -6,19 +6,19 @@ namespace ProVideoGames.Atributos
 {
     public class RequiredComponent : MonoBehaviour
     {
-        private BoxCollider boxCollider;
-        private Rigidbody rigidbody;
+        private BoxCollider _boxCollider;
+        public Rigidbody _rigidbody;
 
         private void Awake()
         {
-            boxCollider = GetComponent<BoxCollider>();
-            rigidbody = GetComponent<Rigidbody>();
+            _boxCollider = GetComponent<BoxCollider>();
+            _rigidbody = GetComponent<Rigidbody>();
         }
 
         private void Start()
         {
-            boxCollider.enabled = true;
-            rigidbody.isKinematic = false;
+            _boxCollider.enabled = true;
+            _rigidbody.isKinematic = false;
         }
     }
 }
