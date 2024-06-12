@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +7,10 @@ namespace ProVideoGames.FundamentosProgramacion
 {
     public class Operadores : MonoBehaviour
     {
-        int myInt;
-        bool myBool;
+        public int myInt;
+        public bool myBool;
 
-        private void Start()
+        public void Start()
         {
             //Operadores aritmeticos
             myInt = 2 + 2;
@@ -35,7 +36,7 @@ namespace ProVideoGames.FundamentosProgramacion
             myBool = 2 == 2 || 4 == 4; //Solo una condicion se debe cumplir
             myBool = 2 == 2 && 4 == 4; //Las dos condiciones se deben cumplir
             myBool = !(2 == 2); //Vuelve a falso la operacion del parentesis, asi sea verdadera.
-
+               
         }
     }
 }

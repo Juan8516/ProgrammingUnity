@@ -34,12 +34,10 @@ namespace ProVideoGames.FundamentosProgramacion
             //Parametros
             StartCoroutine(CallCoroutineWithParams(7.3f, 16, "Test"));
 
-            Coroutine myCoroutine;
+            //Coroutine myCoroutine;
             //myCoroutine = StartCoroutine(CallCoroutineWithParams(7.3f, 16, "Test"));
 
             #endregion
-
-
         }
 
         private IEnumerator CallCoroutine()

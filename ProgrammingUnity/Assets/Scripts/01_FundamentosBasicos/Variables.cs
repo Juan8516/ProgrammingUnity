@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
@@ -28,7 +29,7 @@ namespace ProVideoGames.FunfamentosProgramacion
         // - Ejemplos
         // Variables
         public string playerName = "Juan";
-        private readonly int age = 27;
+        public int age = 27;
 
         // Tipos de datos (valor)
         public int myInt;
