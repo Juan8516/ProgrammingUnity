@@ -7,14 +7,17 @@ namespace ProVideoGames.FundamentosProgramacion
     public class StartAwake : MonoBehaviour
     {
         /*
-            Awake: Inicialización global. Start: Inicialización del objeto.
          
             Awake: Se llama una vez por objeto antes de Start.
             Awake: Sirve para inicializar variables y tareas previas al juego.
+            Awake: Inicialización global. 
+        
+            Start: Inicialización del objeto.
             Start: Se llama una vez por objeto después de Awake en todos.
             Start: Se usa para configurar el objeto y comenzar la ejecución del código.
 
          */
+
         //Awake: Se utiliza para la inicialización global.
         private void Awake()
         {
