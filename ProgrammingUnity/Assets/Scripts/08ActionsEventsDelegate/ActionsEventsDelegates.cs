@@ -8,6 +8,9 @@ namespace ProVideoGames.ActionsEventsDelegates
 {
     public class ActionsEventsDelegates : MonoBehaviour
     {
+
+        //----------------Delegate----------------
+
         //Void
         public delegate void myDelegate();
         public myDelegate myDelegateVar;
