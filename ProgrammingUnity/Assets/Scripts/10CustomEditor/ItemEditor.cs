@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.Networking.PlayerConnection;
 
 namespace ProVideoGames.CustomEditor
 {
@@ -14,10 +15,22 @@ namespace ProVideoGames.CustomEditor
 
             currentTarget = (Item)target;
 
-            if (GUILayout.Button("Execute"))
+            GUILayout.Space(10);
+
+            if (!EditorApplication.isPlaying)
+                GUILayout.Box($"Data: {currentTarget.data.title} - {currentTarget.data.price}");
+
+            EditorGUI.BeginDisabledGroup(EditorApplication.isPlaying);
+            
+
+            string buttonText = EditorApplication.isPlaying ? "Consume (only in Editor Mode)" : "Consume";
+
+            if (GUILayout.Button(buttonText, GUILayout.Height(30)))
             {
                 currentTarget.Consume();
             }
+            
+            EditorGUI.BeginDisabledGroup(EditorApplication.isPlaying);
         }
     }
 }
