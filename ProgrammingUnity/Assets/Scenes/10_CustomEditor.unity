@@ -947,7 +947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 6b4818d8378dc6d4898cf7251379bf86, type: 2}
   itemimg: {fileID: 1175607125}
-  itemTitleTxt: {fileID: 1906599826}
+  itemTitleTxt: {fileID: 1098594468}
   itemPriceTxt: {fileID: 1098594468}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
