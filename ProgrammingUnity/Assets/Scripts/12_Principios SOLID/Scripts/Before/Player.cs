@@ -5,17 +5,16 @@ using TMPro;
 
 namespace Course.SOLID.Before
 {
-    public class Player : MonoBehaviour, ICharacter
+    public class Player : MonoBehaviour, IDamage, IHeal
     {
         public string playerName;
         public int health = 100;
-        public float speedMovement = 15f;
         [Space]
         public Item currentItem;
         [Space]
         public TextMeshProUGUI healthTxt;
 
-        private ICharacter otherCharacter;
+        private IInteract otherCharacter;
 
         private void Start()
         {
@@ -66,16 +65,11 @@ namespace Course.SOLID.Before
             healthTxt.text = "Health: " + health.ToString();
         }
 
-        public void Interact()
-        {
-            // None
-        }
-
         #endregion
 
         private void OnTriggerEnter(Collider other)
         {
-            otherCharacter = other.GetComponent<ICharacter>();
+            otherCharacter = other.GetComponent<IInteract>();
         }
 
         private void OnTriggerExit(Collider other)

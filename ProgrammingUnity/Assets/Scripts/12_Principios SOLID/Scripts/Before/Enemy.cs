@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Course.SOLID.Before
 {
-    public class Enemy : MonoBehaviour, ICharacter
+    public class Enemy : MonoBehaviour, IDamage
     {
         public string enemyName;
 
@@ -13,19 +13,9 @@ namespace Course.SOLID.Before
             Debug.Log($"Enemy receive {value} damage!");
         }
 
-        public void Heal(int value)
-        {
-            // None
-        }
-
-        public void Interact()
-        {
-            // None
-        }
-
         private void OnTriggerEnter(Collider other)
         {
-            ICharacter otherCharacter = other.GetComponent<ICharacter>();
+            IDamage otherCharacter = other.GetComponent<IDamage>();
 
             if (otherCharacter != null)
             {
