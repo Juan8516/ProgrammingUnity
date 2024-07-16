@@ -4,20 +4,11 @@ using UnityEngine;
 
 namespace Course.SOLID.Before
 {
-    public class NPC : MonoBehaviour, ICharacter
+    public class NPC : MonoBehaviour, IInteract
     {
         public string npcName;
-        private ICharacter otherCharacter;
+        private IHeal otherCharacter;
 
-        public void Damage(int value)
-        {
-            // None
-        }
-
-        public void Heal(int value)
-        {
-            // None
-        }
 
         public void Interact()
         {
@@ -29,7 +20,7 @@ namespace Course.SOLID.Before
 
         private void OnTriggerEnter(Collider other)
         {
-            otherCharacter = other.GetComponent<ICharacter>();
+            otherCharacter = other.GetComponent<IHeal>();
         }
 
         private void OnTriggerExit(Collider other)
