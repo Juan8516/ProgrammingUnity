@@ -5,9 +5,8 @@ using UnityEngine.Events;
 
 namespace Course.SOLID.Before
 {
-    public class Player : MonoBehaviour, IDamage, IHeal
+    public class Player : Character, IDamage, IHeal
     {
-        public string playerName;
         public int health = 100;
         public Item currentItem;
         public UnityEvent<int> OnUpdateHealth;

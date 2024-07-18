@@ -4,9 +4,8 @@ using UnityEngine;
 
 namespace Course.SOLID.Before
 {
-    public class NPC : MonoBehaviour, IInteract
+    public class NPC : Character, IInteract
     {
-        public string npcName;
         private IHeal otherCharacter;
 
 

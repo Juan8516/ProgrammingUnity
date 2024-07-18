@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 729b81acacec2704d85f312004aa9d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcName: NPC
+  characterName: NPC
 --- !u!1 &940947519
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033951cb6ce8bb143ba6e624677539c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Enemy
+  characterName: Enemy
 --- !u!1 &1686688914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,7 +1093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 439f8c547bb4e3c4fab8c77f28e6029d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: Mariano
+  characterName: Player1
   health: 100
   currentItem: {fileID: 0}
   OnUpdateHealth:
