@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 682448967}
   - component: {fileID: 682448966}
   - component: {fileID: 682448965}
+  - component: {fileID: 682448968}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -252,6 +253,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &682448968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682448964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e671c9bad1ada5f46a6b514e85853cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthTxt: {fileID: 1866150390}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,9 +1095,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerName: Mariano
   health: 100
-  speedMovement: 15
   currentItem: {fileID: 0}
-  healthTxt: {fileID: 1866150390}
+  OnUpdateHealth:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 682448968}
+        m_TargetAssemblyTypeName: Course.SOLID.Before.HUD, Assembly-CSharp
+        m_MethodName: UpdateHealth
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1789900565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1135,7 +1162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cacfa25a6448a346b50cf48f02caca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InputHandler: {fileID: 1789900565}
+  InputHandler: {fileID: 1789900567}
   speedMovement: 15
   OnInteract:
     m_PersistentCalls:

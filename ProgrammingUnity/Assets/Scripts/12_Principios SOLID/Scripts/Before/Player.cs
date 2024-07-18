@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.Events;
 
 namespace Course.SOLID.Before
 {
@@ -9,16 +9,14 @@ namespace Course.SOLID.Before
     {
         public string playerName;
         public int health = 100;
-        [Space]
         public Item currentItem;
-        [Space]
-        public TextMeshProUGUI healthTxt;
-
+        public UnityEvent<int> OnUpdateHealth;
+        
         private IInteract otherCharacter;
 
         private void Start()
         {
-            healthTxt.text = "Health: " + health.ToString();
+            OnUpdateHealth.Invoke(health);
         }
 
         public void ActionInteracion()
@@ -55,14 +53,14 @@ namespace Course.SOLID.Before
                 Debug.Log("Player DEAD");
             }
 
-            healthTxt.text = "Health: " + health.ToString();
+            OnUpdateHealth.Invoke(health);
         }
 
         public void Heal(int value)
         {
             health = Mathf.Clamp(health + value, 0, 100);
 
-            healthTxt.text = "Health: " + health.ToString();
+            OnUpdateHealth.Invoke(health);
         }
 
         #endregion
