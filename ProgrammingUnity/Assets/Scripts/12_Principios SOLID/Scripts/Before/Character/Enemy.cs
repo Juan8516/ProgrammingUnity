@@ -4,10 +4,8 @@ using UnityEngine;
 
 namespace Course.SOLID.Before
 {
-    public class Enemy : MonoBehaviour, IDamage
+    public class Enemy : Character, IDamage
     {
-        public string enemyName;
-
         public void Damage(int value)
         {
             Debug.Log($"Enemy receive {value} damage!");
