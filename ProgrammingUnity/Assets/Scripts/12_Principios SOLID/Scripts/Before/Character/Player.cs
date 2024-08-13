@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -30,14 +28,7 @@ namespace Course.SOLID.Before
         {
             if (currentItem != null)
             {
-                if (currentItem is ItemWeapon)
-                {
-                    Debug.Log($"{currentItem.itemName}: Shoot!");
-                }
-                else if (currentItem is ItemPotion)
-                {
-                    Debug.Log($"{currentItem.itemName}: Drink to get more power!");
-                }
+                currentItem.ExecuteMessage();
             }
         }
 
