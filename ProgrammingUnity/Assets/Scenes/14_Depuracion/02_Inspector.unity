@@ -318,7 +318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Depuracion
+  m_text: Depuracion Inspector
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 1398159747}
   - component: {fileID: 1398159746}
   - component: {fileID: 1398159745}
+  - component: {fileID: 1398159748}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -500,6 +501,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1398159748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398159744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea5b822adada0fb42854e60a3d6ed37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  publicVar: 0
+  publicHideVar: 0
+  privateSerializeVar: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
