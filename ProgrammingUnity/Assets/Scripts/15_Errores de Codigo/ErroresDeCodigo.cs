@@ -7,7 +7,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            UnassignedReference();
+            NullReference();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -206,6 +206,7 @@ namespace Course.Errores
 
         private void NullReference()
         {
+
             GameObject myPlayer = GameObject.Find("Player");
 
             myPlayer.transform.position = Vector3.zero;
@@ -215,13 +216,13 @@ namespace Course.Errores
 
         #region THE VARIABLE XXX OF XXX HAS NOT BEEN ASSIGNED
 
-        [Header("No hay asignado gameobject")]
-        [Space]
-        public GameObject myGameObject;
-        private void UnassignedReference()
-        {
-            myGameObject.transform.position = Vector3.zero;
-        }
+        //[Header("No gameobject assigned")]
+        //[Space]
+        //public GameObject myGameObject;
+        //private void UnassignedReference()
+        //{
+        //    myGameObject.transform.position = Vector3.zero;
+        //}
 
         #endregion
 
