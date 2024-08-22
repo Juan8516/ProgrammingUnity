@@ -7,7 +7,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            NullReference();
+            IndexOutOfRange();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -193,7 +193,9 @@ namespace Course.Errores
 
         #region INDEX WAS OUTSIDE THE BOUNDS OF THE ARRAY
 
-        [HideInInspector] public int[] myArray;
+        [Header("Array no tiene longitud necesaria")]
+        [Space]
+        public int[] myArray;
 
         private void IndexOutOfRange()
         {
@@ -204,13 +206,13 @@ namespace Course.Errores
 
         #region OBJECT REFERENCE NOT SET TO AN INSTANCE OF AN OBJECT
 
-        private void NullReference()
-        {
+        //private void NullReference()
+        //{
 
-            GameObject myPlayer = GameObject.Find("Player");
+        //    GameObject myPlayer = GameObject.Find("Player");
 
-            myPlayer.transform.position = Vector3.zero;
-        }
+        //    myPlayer.transform.position = Vector3.zero;
+        //}
 
         #endregion
 
