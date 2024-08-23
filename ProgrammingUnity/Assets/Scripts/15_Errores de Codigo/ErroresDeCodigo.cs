@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            
+            Reload();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -182,15 +183,17 @@ namespace Course.Errores
         {
             int myValue;
             myValue = 5;
+            Debug.Log(myValue);
+            Debug.Log("Para mostrar valor se agrega ; al final de variable myValue");
         }
 
         #endregion
 
         #region THE TYPE OR NAMESPACE NAME XXX COULD NOT BE FOUND
         
-        [Header("Se agrega directiva 'using UnityEngine.UI'")]
-        [Space]
-        public Button myButton;
+        //[Header("Se agrega directiva 'using UnityEngine.UI'")]
+        //[Space]
+        //public Button myButton;
 
         #endregion
 

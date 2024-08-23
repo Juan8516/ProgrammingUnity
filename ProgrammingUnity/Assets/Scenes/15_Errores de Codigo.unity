@@ -155,7 +155,7 @@ MonoBehaviour:
   myColor: {r: 0, g: 0, b: 0, a: 0}
   myWeapon: {fileID: 0}
   myBullet: {fileID: 0}
-  myArray: 
+  myButton: {fileID: 0}
 --- !u!4 &102532787
 Transform:
   m_ObjectHideFlags: 0
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 544526518, guid: 23e624e8d47a6544ba8b7f3e7ab3eefb, type: 3}
+  m_Sprite: {fileID: 1907059437, guid: 23e624e8d47a6544ba8b7f3e7ab3eefb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -687,7 +687,7 @@ MonoBehaviour:
   myColor: {r: 0, g: 0, b: 0, a: 0}
   myWeapon: {fileID: 0}
   myBullet: {fileID: 0}
-  myArray: 000000000000000000000000
+  myButton: {fileID: 0}
 --- !u!1 &1693388219
 GameObject:
   m_ObjectHideFlags: 0
