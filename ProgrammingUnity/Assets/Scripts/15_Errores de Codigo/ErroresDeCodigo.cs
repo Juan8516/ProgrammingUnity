@@ -1,4 +1,6 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Course.Errores
 {
@@ -7,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            IndexOutOfRange();
+            Reload();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -181,26 +183,30 @@ namespace Course.Errores
         {
             int myValue;
             myValue = 5;
+            Debug.Log(myValue);
+            Debug.Log("Para mostrar valor se agrega ; al final de variable myValue");
         }
 
         #endregion
 
         #region THE TYPE OR NAMESPACE NAME XXX COULD NOT BE FOUND
-
+        
+        //[Header("Se agrega directiva 'using UnityEngine.UI'")]
+        //[Space]
         //public Button myButton;
 
         #endregion
 
         #region INDEX WAS OUTSIDE THE BOUNDS OF THE ARRAY
 
-        [Header("Array no tiene longitud necesaria")]
-        [Space]
-        public int[] myArray;
+        //[Header("Array no tiene longitud necesaria")]
+        //[Space]
+        //public int[] myArray;
 
-        private void IndexOutOfRange()
-        {
-            int myInt = myArray[5];
-        }
+        //private void IndexOutOfRange()
+        //{
+        //    int myInt = myArray[5];
+        //}
 
         #endregion
 
