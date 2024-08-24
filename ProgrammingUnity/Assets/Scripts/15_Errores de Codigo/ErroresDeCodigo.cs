@@ -9,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            NoOverloadForMethod();
+            NoArgumentGivenThatCorresponds();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -148,6 +148,7 @@ namespace Course.Errores
 
         private void NoArgumentGivenThatCorresponds()
         {
+            //Se pasa el segundo argumento entero correspondiente a amount
             Reload(myBullet, 2);
         }
 
