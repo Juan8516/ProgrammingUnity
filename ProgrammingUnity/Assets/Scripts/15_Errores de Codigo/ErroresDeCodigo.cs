@@ -9,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            Reload();
+            NoArgumentGivenThatCorresponds();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -148,6 +148,7 @@ namespace Course.Errores
 
         private void NoArgumentGivenThatCorresponds()
         {
+            //Se pasa el segundo argumento entero correspondiente a amount
             Reload(myBullet, 2);
         }
 
@@ -170,9 +171,10 @@ namespace Course.Errores
 
         }
 
+
         private void Shoot(GameObject bulletType, int ammo)
         {
-
+            Debug.Log("Se crea metodo para controlar argumento entero");
         }
 
         #endregion
