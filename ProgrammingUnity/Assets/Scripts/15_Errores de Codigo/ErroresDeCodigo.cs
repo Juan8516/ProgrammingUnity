@@ -9,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            Run();
+            EquipWeapon();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -121,6 +121,12 @@ namespace Course.Errores
 
         [HideInInspector] public GameObject myWeapon;
 
+        //Las clases no se pueden asignar como las funciones.
+
+        //private void EquipWeapon0()
+        //{
+        //    myWeapon = GameObject();
+        //}
         private void EquipWeapon()
         {
             myWeapon = GetNewWeapon();
