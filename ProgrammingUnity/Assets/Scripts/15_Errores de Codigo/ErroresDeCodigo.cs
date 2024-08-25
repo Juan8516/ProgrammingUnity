@@ -9,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            NoArgumentGivenThatCorresponds();
+            Run();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -137,7 +137,7 @@ namespace Course.Errores
 
         public void Run()
         {
-
+            //Las funciones deben devolver un valor, ejemplo void, int, string etc.
         }
 
         #endregion
