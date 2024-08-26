@@ -9,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            EquipWeapon();
+            OperatorCannotBeApplied();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -109,6 +109,7 @@ namespace Course.Errores
 
         private void OperatorCannotBeApplied()
         {
+            //No se pueden igualar un string con un entero.
             if (5 == myInt)
             {
                 // Do Something
