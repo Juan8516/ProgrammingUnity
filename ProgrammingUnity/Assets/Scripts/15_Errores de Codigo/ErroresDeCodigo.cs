@@ -9,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            OperatorCannotBeApplied();
+            CannotImplicityConvert();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -97,6 +97,7 @@ namespace Course.Errores
         private void CannotImplicityConvert()
         {
             valueFloat = 3.5f;
+            //Se debe castear valor.
             valueInt = (int)valueFloat;
         }
 
