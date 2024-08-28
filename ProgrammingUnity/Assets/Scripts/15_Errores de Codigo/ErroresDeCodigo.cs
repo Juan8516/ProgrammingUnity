@@ -9,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            CannotImplicityConvert();
+            NameDoesNotExist();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -80,6 +80,7 @@ namespace Course.Errores
 
         #region THE NAME XXX DOES NOT EXIST IN THE CURRENT CONTEXT
 
+        //Se debe crear refeencia para usar en funcion.
         GameObject superWeapon;
 
         private void NameDoesNotExist()
