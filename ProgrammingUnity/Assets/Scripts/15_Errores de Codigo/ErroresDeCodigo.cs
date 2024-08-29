@@ -9,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            NameDoesNotExist();
+            IsAFieldButATypeWasExcepted();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
