@@ -9,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            IsAFieldButATypeWasExcepted();
+            PrintAmmo();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -55,6 +55,7 @@ namespace Course.Errores
 
         #region AN OBJECT REFERENCE IS REQUIRED FOR THE NON-STATIC FIELD, METHOD, OR PROPERTY XXX
 
+        //La referencia debe ser de tipo static.
         public static int currentAmmo = 50;
 
         static void PrintAmmo()
@@ -70,7 +71,7 @@ namespace Course.Errores
 
         private void IsAFieldButATypeWasExcepted()
         {
-            //myColor = Color;
+            //myColor = Color; (la clase se debe asignar los valores correspondientes)
             myColor = new Color(1, 1, 1, 1);
             myColor = Color.white;
             myColor = new Color();
