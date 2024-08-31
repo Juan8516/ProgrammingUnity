@@ -9,7 +9,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            PrintAmmo();
+            CalculateDamage();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -44,6 +44,7 @@ namespace Course.Errores
 
         #region INVALID TOKEN XXX IN CLASS, RECORD, STRUCT, OR INTERFACE MEMBER DECLARATION
 
+        //El método CalculateDamage tenia un tipo void pero intenta devolver un valor; debe ser de tipo int para retornar actualDamage.
         private int CalculateDamage()
         {
             int actualDamage = Random.Range(1, 10);
