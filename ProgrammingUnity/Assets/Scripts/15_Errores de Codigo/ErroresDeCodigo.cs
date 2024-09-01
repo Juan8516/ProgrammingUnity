@@ -1,4 +1,6 @@
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +11,7 @@ namespace Course.Errores
 
         private void Start()
         {
-            PrintAmmo();
+            GetHealth();
         }
 
         #region THE REQUESTED OPERATION CAUSED A STACK OVERFLOW
@@ -28,6 +30,8 @@ namespace Course.Errores
 
         #region XXX: NOT ALL CODE PATHS RETURN A VALUE
 
+        //La función GetHealth no garantiza un valor de retorno si isAlive es false, lo que genera un error.
+
         bool isAlive;
 
         private int GetHealth()
@@ -44,6 +48,7 @@ namespace Course.Errores
 
         #region INVALID TOKEN XXX IN CLASS, RECORD, STRUCT, OR INTERFACE MEMBER DECLARATION
 
+        //El método CalculateDamage tenia un tipo void pero intenta devolver un valor; debe ser de tipo int para retornar actualDamage.
         private int CalculateDamage()
         {
             int actualDamage = Random.Range(1, 10);
@@ -67,14 +72,14 @@ namespace Course.Errores
 
         #region XXX IS A TYPE, WHICH IS NOT VALID IN THE GIVEN CONTEXT
 
-        [HideInInspector] public Color myColor;
+        [HideInInspector] public UnityEngine.Color myColor;
 
         private void IsAFieldButATypeWasExcepted()
         {
             //myColor = Color; (la clase se debe asignar los valores correspondientes)
-            myColor = new Color(1, 1, 1, 1);
-            myColor = Color.white;
-            myColor = new Color();
+            myColor = new UnityEngine.Color(1, 1, 1, 1);
+            myColor = UnityEngine.Color.white;
+            myColor = new UnityEngine.Color();
         }
 
         #endregion
