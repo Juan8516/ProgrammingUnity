@@ -18,6 +18,7 @@ namespace Course.Errores
 
         private void Update()
         {
+            //El error Stack Overflow Exception en C# Unity ocurre cuando se excede el límite de la pila de llamadas, generalmente debido a una recursión infinita o un ciclo sin fin.
             Play();
         }
 
