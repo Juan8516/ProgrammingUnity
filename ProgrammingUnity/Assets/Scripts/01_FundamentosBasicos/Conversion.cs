@@ -11,7 +11,7 @@ namespace ProVideoGames.FundamentosProgramacion
         void Start()
         {
             //Conversion tipo cast
-            //int myCastInt = (int)2.55f;
+            int myCastInt = (int)2.55f;
 
             Collider myCollider = GetComponent<Collider>();
             BoxCollider myBoxCollider;
@@ -29,7 +29,7 @@ namespace ProVideoGames.FundamentosProgramacion
 
 
             //Conversion tipo enum
-            string myStringEnum = "Fire";
+            string myStringEnum = "Fire"; 
 
             AttackType myEnum;
             myEnum = (AttackType)System.Enum.Parse(typeof(AttackType), myStringEnum);
